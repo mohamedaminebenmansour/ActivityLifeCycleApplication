@@ -26,4 +26,28 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         Toast.makeText(this,"OnResume() is called",Toast.LENGTH_LONG).show();
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Toast.makeText(this,"OnPause() is called",Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Toast.makeText(this,"OnStop() is called",Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Toast.makeText(this,"OnDestroy() is called",Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Toast.makeText(this,"OnRestart() is called",Toast.LENGTH_LONG).show();
+    }
 }
